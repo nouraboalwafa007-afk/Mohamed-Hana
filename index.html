@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دعوة زفاف محمد وهنا</title>
+<meta name="description" content="يتشرف محمد وهنا بدعوتكم لحضور حفل زفافهما يوم الجمعة 1 يناير 2027">
+<meta property="og:title" content="دعوة زفاف محمد وهنا">
+<meta property="og:description" content="الجمعة 1 يناير 2027، من 7 مساءً حتى 11 مساءً، قاعة 25 يناير">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<div id="intro">
+  <div class="env-wrap">
+    <div class="env" id="env">
+      <div class="env-back"></div>
+      <div class="env-card">دعوة زفاف</div>
+      <div class="env-front"></div>
+      <div class="env-flap"></div>
+      <button class="seal" id="seal" type="button" aria-label="افتح الدعوة">M&amp;H</button>
+    </div>
+    <p class="hint" id="hint">اضغط على الختم لفتح الدعوة</p>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero">
+    <p class="eyebrow">يتشرف بدعوتكم لحضور حفل زفاف</p>
+    <h1 class="names">محمد<span class="amp">&amp;</span>هنا</h1>
+    <div class="orn">✦</div>
+    <p class="lead">بقلوب مليانة فرحة، يسعدنا نشاركم أجمل أيام حياتنا، وحضوركم هيزيد الفرحة فرحة.</p>
+    <p class="date-big">الجمعة ١ يناير ٢٠٢٧ &middot; ٧ مساءً</p>
+  </section>
+
+  <section id="countdown">
+    <h2>باقي على الفرح</h2>
+    <div class="count" id="count" aria-live="off">
+      <div><b id="cd-d">0</b><span>يوم</span></div>
+      <div><b id="cd-h">0</b><span>ساعة</span></div>
+      <div><b id="cd-m">0</b><span>دقيقة</span></div>
+      <div><b id="cd-s">0</b><span>ثانية</span></div>
+    </div>
+    <p id="cd-done">النهارده الفرح، ننتظركم!</p>
+  </section>
+
+  <section id="details">
+    <h2>تفاصيل الحفل</h2>
+    <div class="card">
+      <dl class="facts">
+        <div><dt>التاريخ</dt><dd>الجمعة، 1 يناير 2027</dd></div>
+        <div><dt>الميعاد</dt><dd>من 7 مساءً إلى 11 مساءً</dd></div>
+        <div><dt>المكان</dt><dd>قاعة 25 يناير<br><small>طريق البلاجات</small></dd></div>
+      </dl>
+      <div class="row">
+        <a class="btn" href="https://maps.app.goo.gl/WuwwBKgtWrYztsabA?g_st=ac" target="_blank" rel="noopener">افتح الموقع على الخريطة</a>
+      </div>
+    </div>
+    <div class="row">
+      <a class="btn alt" id="gcal" href="#" target="_blank" rel="noopener">أضف للتقويم (Google)</a>
+      <button class="btn alt" id="ics" type="button">أضف للتقويم (ملف ICS)</button>
+    </div>
+  </section>
+
+  <section id="download">
+    <h2>نسخة الدعوة</h2>
+    
+    <div class="row">
+      <a class="btn" href="invitation.png" download="دعوة-زفاف-محمد-وهنا.png">تنزيل كصورة</a>
+      <a class="btn alt" href="invitation.pdf" download="دعوة-زفاف-محمد-وهنا.pdf">تنزيل PDF</a>
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <h2>تأكيد الحضور</h2>
+    <div class="card">
+      <form id="form" novalidate>
+        <label>الاسم
+          <input type="text" id="f-name" autocomplete="name" required>
+        </label>
+        <div class="choice" role="radiogroup" aria-label="هتحضر؟">
+          <label><input type="radio" name="att" value="yes" checked><span>هحضر بإذن الله</span></label>
+          <label><input type="radio" name="att" value="no"><span>للأسف مش هقدر</span></label>
+        </div>
+        <label id="g-wrap">عدد الحضور (شاملك)
+          <input type="number" id="f-guests" min="1" max="10" value="1">
+        </label>
+        <label>رسالة للعروسين (اختياري)
+          <textarea id="f-msg" rows="3"></textarea>
+        </label>
+        <button class="btn" type="submit">أكّد الحضور</button>
+        <p class="note" id="err" style="color:#a02a2a;display:none">اكتب اسمك الأول.</p>
+        <p id="thanks">شكرًا ليك! اتفتحت رسالة واتساب جاهزة، اضغط إرسال عشان التأكيد يوصل.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="orn">✦</div>
+    <p class="names">محمد &amp; هنا</p>
+    <p>١ يناير ٢٠٢٧</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
